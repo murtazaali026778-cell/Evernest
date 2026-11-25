@@ -1,5 +1,6 @@
 import React from 'react';
 import facebook from '../src/assets/facebook.webp'
+import { Link } from 'react-router-dom';
 import insta from '../src/assets/insta.webp'
 import { 
   Landmark, 
@@ -115,7 +116,7 @@ export default function ShopFooter() {
           <nav className="footer-col" aria-label="Legal and Store Policies">
             <h3>LEGAL</h3>
             <ul>
-              <li><a href="/policies/privacy-policy" title="Read Our Privacy Policy">Privacy Policy</a></li>
+              <li><Link to='/policies/privacy' title="Read Our Privacy Policy">Privacy Policy</Link></li>
               <li><a href="/policies/refund-policy" title="7-Day Returns and Exchanges Policy">Returns &amp; Exchanges</a></li>
               <li><a href="/policies/shipping-policy" title="Karachi & Nationwide Shipping Details">Shipping &amp; Delivery</a></li>
               <li><a href="/policies/terms-of-service" title="Store Terms and Conditions">Terms &amp; Conditions</a></li>

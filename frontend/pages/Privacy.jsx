@@ -1,6 +1,7 @@
 
 import './PrivacyPolicy.css';
 
+
 const PrivacyPolicy = () => {
   const sections = [
     {

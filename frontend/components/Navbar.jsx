@@ -34,14 +34,11 @@ const Navbar = () => {
         </div>}
       <nav className="navbar">
         {/* Left: Menu & Search */}
-        <div className="innernavdiv nav-left">
-          <button className="icon-btn" aria-label="Menu" onClick={toggle}>
-            <Menu size={20} strokeWidth={2.5} />
-          </button>
-          <button className="icon-btn" aria-label="Search">
-            <Search size={20} strokeWidth={2.5} />
-          </button>
+         <div className="innernavdiv nav-left">
+          <img src={logo} alt="Evernest Logo" className="nav-logo" />
+          <h1 className="nav-title">EVERNEST</h1>
         </div>
+       
 
         
         <div className="innernavdiv nav-center">
@@ -51,11 +48,15 @@ const Navbar = () => {
           <a href="#contact">Contact</a>
         </div>
 
-       
         <div className="innernavdiv nav-right">
-          <img src={logo} alt="Evernest Logo" className="nav-logo" />
-          <h1 className="nav-title">EVERNEST</h1>
+          <button className="icon-btn" aria-label="Menu" onClick={toggle}>
+            <Menu size={20} strokeWidth={2.5} />
+          </button>
+          <button className="icon-btn" aria-label="Search">
+            <Search size={20} strokeWidth={2.5} />
+          </button>
         </div>
+       
       </nav>
     </header>
   );

@@ -1,0 +1,14 @@
+.categoryimagewrapper{
+  width: 30.6vw;
+  height: auto;
+  
+  
+}
+.categoryimagewrapper img{
+  z-index: 1;
+  cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 0 #000;
+}

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import HeroSpotlight from '../components/HeroSpotlight'
 import {Routes,Route}  from 'react-router-dom'
-import Home from '../pages/Home.jsx'
+import Home from '../pages/Home'
 
 const App = () => {
   

@@ -1,43 +1,36 @@
-.category{
+.category {
   color: #14110e;
   padding: 24px 70px;
   font-size: 1.5rem;
-
   margin-top: 40px;
   font-weight: 600;
 }
-.categoryText{
+
+.categoryText {
   font-family: Geist, "Geist Fallback", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-font-size: 28px;
-font-weight: 700;
-margin-bottom: 20px;
-line-height: 37px;
-letter-spacing: -0.41px;
-color: #14110e;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 37px;
+  letter-spacing: -0.41px;
+  color: #14110e;
 }
 
-.categorylinks{
-  display: flex;
-  align-items: center;
-  gap: 0px;
-}
-
-/* Parent container (Home.css ya Pics.css mein) */
+/* Parent container */
 .categorylinks {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  padding: 0 2rem;
 }
 
 /* Main Card Wrapper */
 .categoryimagewrapper {
   position: relative;
   width: 30.6vw;
-  aspect-ratio: 3 / 4; /* Teeno cards ki height aur ratio exact barabar rakhega */
+  aspect-ratio: 3 / 4;
   border-radius: 10px;
-  overflow: hidden; /* Zoom hone par image bahar nahi niklegi */
+  overflow: hidden;
   cursor: pointer;
   background-color: #111;
 }
@@ -55,7 +48,7 @@ color: #14110e;
   transform: scale(1.06);
 }
 
-/* Bottom Dark Gradient Overlay (taake white text har photo par saaf dikhe) */
+/* Bottom Dark Gradient Overlay */
 .categoryimagewrapper::after {
   content: '';
   position: absolute;
@@ -100,11 +93,14 @@ color: #14110e;
   transform: translateX(6px);
 }
 
-/* Tablet Responsive (2 cards ya balanced width) */
+/* Tablet Responsive */
 @media (max-width: 992px) {
+  .category {
+    padding: 24px 32px;
+  }
+
   .categorylinks {
     flex-wrap: wrap;
-    padding: 0 1.25rem;
     gap: 1rem;
   }
 
@@ -113,12 +109,18 @@ color: #14110e;
   }
 }
 
-/* Mobile Responsive (Full width clean cards) */
+/* Mobile Responsive (Full width cards) */
 @media (max-width: 600px) {
+  .category {
+    padding: 16px 16px; /* 70px ki jagah 16px kar diya taake full width lage */
+    margin-top: 24px;
+  }
+
   .categorylinks {
     flex-direction: column;
-    padding: 0 1rem;
+    padding: 0;
     gap: 1rem;
+    width: 100%;
   }
 
   .categoryimagewrapper {

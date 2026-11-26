@@ -1,8 +1,12 @@
 
-import './PrivacyPolicy.css';
+import Textpages from '../components/Textpages';
+
+import { useEffect } from 'react';
 
 
 const PrivacyPolicy = () => {
+
+ 
   const sections = [
     {
       title: 'What we collect',
@@ -39,33 +43,15 @@ const PrivacyPolicy = () => {
   ];
 
   return (
-    <main className="privacy-container">
-      <div className="privacy-header">
-        <h2 className="privacy-title">Privacy Policy</h2>
-        <p className="privacy-subtitle">
-          How we collect, use, and protect your personal information.
-        </p>
-      </div>
+   
+     
 
-      <div className="privacy-sections">
-        {sections.map((section) => (
-          <section key={section.title} className="privacy-section">
-            <h2 className="privacy-section-title">{section.title}</h2>
-            <p className="privacy-section-text">
-              {section.content}
-              {section.linkText && (
-                <>
-                  <a href={section.linkHref} className="privacy-link">
-                    {section.linkText}
-                  </a>
-                  .
-                </>
-              )}
-            </p>
-          </section>
-        ))}
-      </div>
-    </main>
+      
+      <>
+      <Textpages sections={sections} title='Privacy Policy' />
+      
+     </>
+  
   );
 };
 

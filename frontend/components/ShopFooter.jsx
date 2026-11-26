@@ -119,7 +119,7 @@ export default function ShopFooter() {
               <li><Link to='/policies/privacy' title="Read Our Privacy Policy">Privacy Policy</Link></li>
               <li><a href="/policies/refund-policy" title="7-Day Returns and Exchanges Policy">Returns &amp; Exchanges</a></li>
               <li><a href="/policies/shipping-policy" title="Karachi & Nationwide Shipping Details">Shipping &amp; Delivery</a></li>
-              <li><a href="/policies/terms-of-service" title="Store Terms and Conditions">Terms &amp; Conditions</a></li>
+              <li><Link to="/policies/termsandconditions" title="Store Terms and Conditions">Terms &amp; Conditions</Link></li>
             </ul>
           </nav>
 

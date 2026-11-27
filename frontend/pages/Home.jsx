@@ -6,6 +6,7 @@ import B1 from '../src/assets/BOOTLE1.webp'
 
 import './Home.css'
 import Pics from '../components/Pics'
+import Product from '../components/Product'
 
 function Home() {
   const pics = [
@@ -49,7 +50,21 @@ function Home() {
             )
           })}
         </div>
+
+         <div className='new'>
+          <h4 className='h4arr'>New Arrivals</h4>
+          <p className='arr'>The most recent addition to the shop</p>
+          <div className="productParent">
+            <Product />
+              <Product />
+                <Product />
+                <Product />
+              
+          </div>
       </div>
+      </div>
+     
+      {/* <Product /> */}
     </>
   )
 }
